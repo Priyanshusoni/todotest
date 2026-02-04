@@ -6,7 +6,7 @@
 flutter pub get
 ```
 
-- **Build (release/prod flavor):**
+- **Build Run (release/prod flavor):**
 ```bash
 flutter run --flavor dev --dart-define=FLAVOR=dev
 flutter run --flavor staging --dart-define=FLAVOR=staging
@@ -14,6 +14,13 @@ flutter run --flavor qa --dart-define=FLAVOR=qa
 flutter run --flavor prod --dart-define=FLAVOR=prod
 ```
 
+- **Build APK (release/prod flavor):**
+```bash
+flutter build apk  --flavor dev --dart-define=FLAVOR=dev
+flutter build apk  --flavor staging --dart-define=FLAVOR=staging
+flutter build apk  --flavor qa --dart-define=FLAVOR=qa
+flutter build apk  --flavor prod --dart-define=FLAVOR=prod
+```
 
 ## Brief architecture
 
