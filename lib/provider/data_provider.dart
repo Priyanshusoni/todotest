@@ -142,6 +142,7 @@ class DataProvider extends ChangeNotifier {
           data: [newTodo, ..._todos.data],
           total: _todos.total + 1,
         );
+        notifyListeners();
         scaffoldMessage('Todo added successfully', isError: !res.status);
       } else {
         scaffoldMessage(res.message, isError: !res.status);
@@ -172,6 +173,7 @@ class DataProvider extends ChangeNotifier {
           _todos = _todos.copyWith(data: data);
           printLog('message');
           scaffoldMessage('Todo updated successfully', isError: !res.status);
+          notifyListeners();
         } else {
           scaffoldMessage(res.message, isError: !res.status);
         }
