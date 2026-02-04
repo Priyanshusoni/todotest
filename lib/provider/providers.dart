@@ -4,7 +4,7 @@ import 'package:internet_connection_checker_plus/internet_connection_checker_plu
 import 'package:todo/provider/data_provider.dart';
 
 final dataProvider = ChangeNotifierProvider<DataProvider>(
-  (ref) => DataProvider(),
+  (ref) => DataProvider()..init(),
 );
 
 final networkProvider = StreamProvider<bool>((ref) async* {

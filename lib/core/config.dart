@@ -3,14 +3,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get_it/get_it.dart';
 import 'package:todo/core/enums.dart';
-
 import 'package:todo/core/network_info.dart';
 import 'package:todo/core/services/app_lifecycle.dart';
 import 'package:todo/core/utils/debug_print.dart';
 import 'package:todo/core/utils/utils.dart';
 import 'package:todo/data/repository/data_repo_impl.dart';
 import 'package:todo/domain/repository/data_repo.dart';
-// import 'package:todo/firebase_options.dart';
 
 class Config {
   static late LifeCycle lifeCycle;

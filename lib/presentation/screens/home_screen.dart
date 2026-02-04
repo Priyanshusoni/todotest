@@ -27,6 +27,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   @override
   void initState() {
+    // ref.read(dataProvider).getTodoList();
     getData();
     super.initState();
   }
@@ -47,11 +48,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     isFetching = false;
   }
 
-  @override
-  void dispose() {
-    DatabaseHelper.instance.closeDb();
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   DatabaseHelper().closeDb();
+  //   super.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {
